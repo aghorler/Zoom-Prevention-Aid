@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Zoom Prevention Aid",
+  "version": "1.0.0",
+  "description": "Prevent zoom settings from being change accidentially.",
+  "icons": {
+    "128": "/img/icon128.png"
+  },
+  "browser_action": {
+    "name": "Open zoom factor options."
+  },
+  "options_ui": {
+    "page": "/html/options.html",
+    "chrome_style": true,
+    "open_in_tab": false
+  },
+  "minimum_chrome_version": "42",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "scripts": ["/js/background.js"],
+    "persistent": false
+  }
+}

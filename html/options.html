@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zoom Prevention Aid</title>
+    </head>
+    <body>
+        <h3>Zoom factor options</h3>
+
+        <div id="content">
+            <p>
+                <label for="zoom-factor" style="font-weight: bold;">Forced zoom factor</label><br>
+                <input id="zoom-factor" type="number" min="0.10" max="400.0" placeholder="1.0" step="0.1">
+            </p>
+
+            <p><span style="font-style: italic;">Zoom factor</span> is an alternative means to express a zoom percentage. Your selected zoom factor expressed as a percentage is <span id="zoom-percentage" style="font-weight: bold;">100</span>%.</p>
+
+        <p style="color: grey; text-align: center;">
+            Developed by <a href="https://aaronhorler.com">Aaron Horler</a> (aghorler) | <a href="https://github.com/aghorler/WebRTC-Leak-Prevent">GitHub source</a>
+        </p>
+
+        <script src="/js/options.js"></script>
+    </body>
+</html>
